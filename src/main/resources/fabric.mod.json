@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "bundled_dungeons",
+  "version": "${version}",
+  "name": "Bundled Dungeons",
+  "description": "More Dungeons and stuff related!",
+  "authors": [
+    "wiktormalyska",
+    "weronikaciezak"
+  ],
+  "contact": {
+    "repo": "https://github.com/wikim/Bundled Dungeons"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/bundled_dungeons/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.wiktormalyska.bundled_dungeons.client.BundledDungeonsClient"
+    ],
+    "main": [
+      "org.wiktormalyska.bundled_dungeons.BundledDungeons"
+    ]
+  },
+  "mixins": [
+    "bundled_dungeons.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
